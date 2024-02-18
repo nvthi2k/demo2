@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
+import 'dart:collection';
 
 void main() {
-  runApp(const MyApp());
+  // DH a = new DH();
+  // a.a();
+  //runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
 
   // This widget is the root of your application.
   @override
@@ -122,4 +126,19 @@ class _MyHomePageState extends State<MyHomePage> {
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
+}
+
+class DH {
+
+  a(){
+  var numbers = [1,2,3];
+
+  List<String> lstNum = numbers.map((e) => '$e').toList();
+
+  bool check = true;
+  var name = check == true ? 'Đúng' : 'Sai';
+
+  print(name);
+  }
+
 }
